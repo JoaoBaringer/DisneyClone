@@ -1,0 +1,99 @@
+#login{
+    background-image: linear-gradient(to right, rgba(34, 35, 41), rgba(25, 27, 58));
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-form{
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+#login-logo {
+    width: 160px ;  
+    height: 100px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#login-logo img{
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    margin-top: 10px;
+}
+
+#login-infos{
+    width: 100%;
+    color: gray;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+
+}
+
+#login-infos h3{
+    text-align: left;
+    width: 100%;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.2;
+    color: white;
+}
+
+#fieldset-login{
+    width: 100%;
+    display: grid;
+    gap: 20px   ;
+}
+
+#fieldset-login input{
+    height: 60px;
+    border-radius: 5px;
+    background-color: rgb(49, 52, 62);
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding-left: 15px;
+}
+
+#fieldset-login button {
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+    background-color: #0072d2;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#fieldset-login button:hover{
+    transition: 1s;
+    background-color: #3693df;
+    border: none;
+}
+
+#sign-up{
+    font-size: 18px;
+}
+
+#sign-up a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#sign-up a:hover{
+    border-bottom: 1px solid white;
+    color: #0072d2;
+}

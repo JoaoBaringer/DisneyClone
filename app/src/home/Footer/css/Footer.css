@@ -1,0 +1,28 @@
+#Footer{
+    background-image: linear-gradient(to right, rgb(19, 20, 26), rgb(24, 25, 36));
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: bottom;
+}
+
+#Footer-image{
+    width: 100px;
+    margin: 20px auto;
+    height: 100%;
+}
+
+#Footer-image img{
+    width: 100%;
+
+}
+
+.texts{
+    margin: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 600px;
+}
