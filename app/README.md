@@ -1,7 +1,6 @@
 ## 📕 Sobre
 
-Esse é um projeto inicial/clone do Disney+ que ainda está em desenvolvimento,
-com as suas principais screens e rotas desenvolvidas
+This is a starter project/clone of Disney+ which is still under devopment with yours main screens and routes developed
 
 ## 🔨 Ferramentas
 
@@ -17,3 +16,10 @@ com as suas principais screens e rotas desenvolvidas
   #Clone the project
   $ git clone https://github.com/JoaoBaringer/DisneyClone.git
 ```
+
+## 📌 ROUTES
+
+- localhost:3000/ -> Home
+- localhost:3000/login - Login (Under development)
+- localhost:3000/signup - Register(Under development)
+
