@@ -7,7 +7,7 @@ const Footer = () => {
         <div id='Footer'>
 
             <div id='Footer-image'>
-                <img src={DisneyLogo} />
+                <img alt='Logo-footer' src={DisneyLogo} />
             </div>
 
             <div className='texts'>

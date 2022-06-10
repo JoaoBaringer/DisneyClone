@@ -3,21 +3,23 @@
     min-height: 100vh;
     justify-content: center;
     align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 #login-form{
     margin: auto;
     width: 500px;
-    height: 500px;
     display: grid;
     grid-template-columns: 1fr;
+
 
 }
 
 #login-logo {
-    width: 160px ;  
-    height: 100px;
-    margin: 0 auto;
+    width: 130px ;  
+    height: 80px;
+    margin: 5px auto;
     justify-content: center;
     align-items: center;
 }
@@ -96,4 +98,48 @@
 #sign-up a:hover{
     border-bottom: 1px solid white;
     color: #0072d2;
+}
+
+#Footer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 50px;
+}
+#Footer-image{
+    height: 20%;
+}
+
+.texts{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+@media (max-width: 600px){
+    #login{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #login-form{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    #login-infos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #fieldset-login{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    #email, #password, button{
+        width: 100%;
+    }
 }

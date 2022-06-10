@@ -7,15 +7,35 @@ import mais from './imgs/mais.png'
 import rolo from './imgs/rolo.png'
 import star from './imgs/star.png'
 import tv from './imgs/tv.png'
-
+import MenuHamburguer from './nav'
 
 const Header = () => {
+
+
     return (
         <div id='navbar'>
 
             <div className='Logo'>
-                <a href='/'><img src={logo} /></a>
+                <a href='/'><img alt='logo' src={logo} /></a>
             </div>
+
+            <div onClick={MenuHamburguer} className='hamburguer'>
+                <div className='line' id='line1'></div>
+                <div className='line' id='line2'></div>
+                <div className='line' id='line3'></div>
+            </div>
+
+            <ul className='menu'>
+                <div className='menu-hamburguer'>
+                    <li className='nav-item'><a href='#' className='nav-link'>INICIO</a></li>
+                    <li className='nav-item'><a href='#' className='nav-link'>PESQUISA</a></li>
+                    <li className='nav-item'><a href='#' className='nav-link'>MINHA LISTA</a></li>
+                    <li className='nav-item'><a href='#' className='nav-link'>ORIGINAIS</a></li>
+                    <li className='nav-item'><a href='#' className='nav-link'>FILMES</a></li>
+                    <li className='nav-item'><a href='#' className='nav-link'>SERIES</a></li>
+                    <li className='nav-item'><a href='#' className='nav-link'>PERFIL</a></li>
+                </div>
+            </ul>
 
             <div id='itens'>
 
@@ -51,13 +71,14 @@ const Header = () => {
 
             </div>
 
-            <div id='changeperfil'>
-                <span id='username'>Jhoony</span>
-                <div id='change'></div>
+            <div className='changeperfil'>
+                <span className='username'>Jhoony</span>
+                <div className='change'></div>
             </div>
 
         </div>
     )
+
 }
 
 export default Header

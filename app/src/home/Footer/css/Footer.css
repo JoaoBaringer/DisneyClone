@@ -1,23 +1,22 @@
-#Footer{
+#Footer {
     background-image: linear-gradient(to right, rgb(19, 20, 26), rgb(24, 25, 36));
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: bottom;
+    width: 100%;
 }
-
-#Footer-image{
+#Footer-image {
     width: 100px;
     margin: 20px auto;
-    height: 100%;
+    height: 7%;
 }
 
-#Footer-image img{
+#Footer-image img {
     width: 100%;
 
 }
 
-.texts{
+.texts {
     margin: auto;
     color: white;
     display: flex;
@@ -25,4 +24,16 @@
     justify-content: center;
     gap: 20px;
     width: 600px;
+}
+
+@media (max-width: 985px) {
+    #Footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .texts {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
