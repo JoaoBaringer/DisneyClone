@@ -1,0 +1,39 @@
+#SearchContent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#Searchbar{
+    display: flex;
+    height: 50px;
+    width: 90%;
+    margin: 10px auto;
+}
+
+#Searchbar input[type=text]{
+    width: 100%;
+    font-size: 20px;
+    height: 100%;
+    color: white;
+    padding: 20px;
+    border: none;
+    background-image: linear-gradient(to right, rgb(39, 40, 48), rgb(40, 40, 68));
+}
+
+
+#Search-movies{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 900px){
+    #Searchbar input[type=submit]{
+        display: none;
+    }
+    #Searchbar input[type=text]{
+        width: 100%;
+    }
+}

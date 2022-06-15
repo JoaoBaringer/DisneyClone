@@ -1,5 +1,5 @@
 import React from 'react'
-import Content from '../principal/content'
+import Content from '../../principal/content'
 
 const Home = () => {
     return (

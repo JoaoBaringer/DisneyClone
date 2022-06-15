@@ -6,12 +6,14 @@ import Footer from '../Footer/Footer'
 import './css/content.css'
 
 export default function Content() {
+
     return (
         <div id='content'>
             <Header />
             <Carousel/>
             <Cards/>
             <Footer/>
+            
         </div>
     )
 }

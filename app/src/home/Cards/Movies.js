@@ -1,15 +1,14 @@
 import React from 'react'
 import './css/Movies.css'
-import { movies } from './imgs/movies'
 import './css/Cards.css'
-
+import { movies } from './imgs/movies'
 const Movies = () => {
     return (
         <div id='Movies'>
-            {movies.map((m, i) => {
+            {movies.map((movie, i) => {
                 return (
-                    <div key={m.i} className='movie-card'>
-                        <img alt={m.i} key={m.i} className={m.i} src={m.image}/>
+                    <div key={movie.i} className='movie-card'>
+                        <img alt={movie.i} key={movie.i} className={movie.i} src={movie.image}/>
                     </div>
                 )
             })}            

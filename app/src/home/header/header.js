@@ -7,10 +7,13 @@ import mais from './imgs/mais.png'
 import rolo from './imgs/rolo.png'
 import star from './imgs/star.png'
 import tv from './imgs/tv.png'
-import MenuHamburguer from './nav'
 
 const Header = () => {
 
+    function MenuHamburguer() {
+        const Hamburguer = document.getElementById('navbar')
+        Hamburguer.classList.toggle('nav-menu')
+    }
 
     return (
         <div id='navbar'>
@@ -27,8 +30,8 @@ const Header = () => {
 
             <ul className='menu'>
                 <div className='menu-hamburguer'>
-                    <li className='nav-item'><a href='#' className='nav-link'>INICIO</a></li>
-                    <li className='nav-item'><a href='#' className='nav-link'>PESQUISA</a></li>
+                    <li className='nav-item'><a href='/' className='nav-link'>INICIO</a></li>
+                    <li className='nav-item'><a href='/search' className='nav-link'>PESQUISA</a></li>
                     <li className='nav-item'><a href='#' className='nav-link'>MINHA LISTA</a></li>
                     <li className='nav-item'><a href='#' className='nav-link'>ORIGINAIS</a></li>
                     <li className='nav-item'><a href='#' className='nav-link'>FILMES</a></li>
@@ -46,7 +49,7 @@ const Header = () => {
 
                 <div className='item'>
                     <img src={lupa} />
-                    <span>PESQUISA</span>
+                    <span><a href='/search'>PESQUISA</a></span>
                 </div>
 
                 <div className='item'>

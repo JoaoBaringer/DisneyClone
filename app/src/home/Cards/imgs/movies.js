@@ -1,5 +1,5 @@
 export const movies = [
-    {   
+    {
         i: 'Moana',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/37835B77FBF69C94EA25A59BC25FCED323F2586E29D731E01B5B93180E30B561/scale?width=400&aspectRatio=1.78&format=jpeg'
     },

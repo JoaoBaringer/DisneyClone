@@ -1,6 +1,6 @@
 import React from 'react'
 import './css/Cards.css'
-import { cards } from './imgs/cards'
+import { cards } from './imgs/cards'        
 import Movies from './Movies'
 
 const Cards = () => {
@@ -8,7 +8,7 @@ const Cards = () => {
         <div id='cards'>
 
             <div id='card-menu'>
-                {cards.map((c, i) => {
+                {cards.map((c) => {
                     return (
                         <div key={c.i} className='card-image'>
                             <img alt={c.i} className={c.i} src={c.image}/>
