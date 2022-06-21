@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import Header from "../../header/header";
-import { movies as importmovies } from '../../Cards/imgs/movies'
+import Header from "../../components/home/header/header";
+import { movies as importmovies } from '../../components/home/Cards/imgs/movies'
 import './css/Searchbar.css'
-import Footer from "../../Footer/Footer";
+import Footer from '../../components/home/Footer/Footer'
 
 const Search = () => {
     const [word, setword] = useState('')
 
-    const newmovies = importmovies.filter((movie) => movie['i'].toLocaleLowerCase().includes(word.toLowerCase()))
+    const newmovies = importmovies.filter((movie) => movie['i'].toLowerCase().includes(word.toLowerCase()))
 
     return (
         <div id="SearchContent">

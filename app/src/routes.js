@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './home/screens/Home/home'
-import NotFoundScreen from './home/screens/NotFoundScreen/NotFoundScreen'
-import SignUp from './signup/signup'
-import Login from './login/login'
-import Search from './home/screens/Search/Search'
+import Home from './screens/Home/home'
+import NotFoundScreen from './screens/NotFoundScreen/NotFoundScreen'
+import SignUp from './screens/signup/signup'
+import Login from './screens/login/login'
+import Search from './screens/Search/Search'
 
 const Rotas = () => {
     return (

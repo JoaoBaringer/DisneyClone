@@ -5,7 +5,7 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
 const Carousel = () => {
     const [current, setCurrent] = useState(0)
-    const size = SliderData.length -1
+    const size = SliderData.length - 1
 
     const nextSlide = () => {
         setCurrent(current !== size ? current + 1 : 0)
@@ -14,19 +14,25 @@ const Carousel = () => {
     const prevSlide = () => {
         setCurrent(current === 0 ? size : current - 1)
     }
-
-
+    
     return (
         <div id='Carousel'>
-            <FiChevronRight className='right-arrow' onClick={nextSlide}/>
-            <FiChevronLeft className='left-arrow' onClick={prevSlide}/>
+            <FiChevronRight className='right-arrow' onClick={nextSlide} />
+            <FiChevronLeft className='left-arrow' onClick={prevSlide} />
             {SliderData.map((slide, index) => {
                 return (
                     <div className={index === current ? 'slide-active' : 'slide'} key={index}>
-                        {index === current && <img src={slide.image} alt='carousel' className='image'/>}
+                        {index === current && <img src={slide.image} alt='carousel' className='image' />}
                     </div>
                 )
             })}
+            <div className='container-dots'>
+                {SliderData.map( i => {
+                        return (
+                        <div key={i.i} className='dots' onClick={() => {setCurrent(i.i)}} id={i.i === current ? 'dot-active' : null}></div>
+                    )
+                })}
+            </div>
         </div>
     )
 }

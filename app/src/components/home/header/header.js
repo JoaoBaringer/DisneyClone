@@ -74,9 +74,9 @@ const Header = () => {
 
             </div>
 
-            <div className='changeperfil'>
-                <span className='username'>Jhoony</span>
-                <div className='change'></div>
+            <div id='changeperfil'>
+                <span id='username'>Jhoony</span>
+                <div id='change'></div>
             </div>
 
         </div>

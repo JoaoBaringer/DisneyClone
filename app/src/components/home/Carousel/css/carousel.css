@@ -1,27 +1,48 @@
 #Carousel {
     margin-top: 50px;
-    margin: auto;
+    margin: 70px auto;
     width: 100%;
     overflow: hidden;
     position: relative;
-    height: 420px;
+    height: 410px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
 .image {
     height: 100%;
-    width: 100%;
+    margin: 20px;
     border-radius: 20px;
     background-size: cover;
 }
 
+.container-dots{
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 10%;
+    gap: 10px;
+}
+
+.dots{
+    background-color: white;
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#dot-active {
+    background-color: orange;
+}
 
 .right-arrow {
     position: absolute;
-    top: 40%;
-    right: 8%;
+    top: 43%;
+    right: 15%;
     font-size: 4rem;
     color: white;
     cursor: pointer;
@@ -32,8 +53,8 @@
 
 .left-arrow {
     position: absolute;
-    top: 40%;
-    left: 8%;
+    top: 43%;
+    left: 15%;
     font-size: 4rem;
     color: white;
     cursor: pointer;
@@ -54,24 +75,30 @@
 }
 
 @media (max-width: 987px) {
-    #Carousel{
-        height: 150px;
+    #Carousel {
+        height: 300px;
+    }
+    .slide-active{
+        transform: scale(0.7);
     }
 
-    .slide-active{
-        transform: scale(1.0);
-    }
 }
 
-@media (max-width: 600px){
-    #Carousel{
-        height: 120px;
+@media (max-width: 600px) {
+    #Carousel {
+        height: 200px;
     }
-    .right-arrow{
-        top: 20%;
+    
+    .slide-active{
+        transform: scale(0.5);
     }
-    .left-arrow{
-        top: 20%;
+
+    .right-arrow {
+        top: 35%;
+    }
+
+    .left-arrow {
+        top: 35%;
     }
 
 }

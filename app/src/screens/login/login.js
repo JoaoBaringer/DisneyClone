@@ -1,30 +1,28 @@
 import React from 'react'
-import './css/signup.css'
-import signup_logo from './imgs/disney-logo.png'
-import createUser from '../Validations/SignUpValidations'
+import './css/login.css'
+import login_logo from './imgs/disney-logo.png'
+import createUser from '../../Validations/LoginValidations'
 
-const SignUp = () => {
+const Login = () => {
     return (
-        <div id='SignUp'>
+        <div id='login'>
 
-            <form onSubmit={createUser} id='SignUp-form'>
+            <form onSubmit={createUser} id='login-form'>
 
-                <div id='SignUp-logo'>
-                    <img alt='Disney-logo' src={signup_logo} />
+                <div id='login-logo'>
+                    <img alt='Disney-Logo' src={login_logo} />
                 </div>
 
-                <div id='SignUp-infos'>
-                    <h3>Sign Up with your email</h3>
-                    <div id='fieldset-SignUp'>
-                        <input id='username' type='text' placeholder='Username'></input>
-                        <input id='email' type='email' placeholder='Email'></input>
-                        <input id='password' type='password' placeholder='Password'></input>
-                        <input id='password' type='password' placeholder='Repeat password'></input>
+                <div id='login-infos'>
+                    <h3>Log in with your email</h3>
+                    <div id='fieldset-login'>
+                        <input id='email' type='email' autoComplete='on' placeholder='Email'></input>
+                        <input id='password' type='password' autoComplete='on' placeholder='Password'></input>
                         <button type='submit'>CONTINUE</button>
                     </div>
 
                     <div id='sign-up'>
-                        <h4>New to Disney+? <a href='/login'>Login</a></h4>
+                        <h4>New to Disney+? <a href='/signup'>Sign up</a></h4>
                     </div>
 
                 </div>
@@ -32,9 +30,9 @@ const SignUp = () => {
             </form>
 
             <footer id='Footer'>
-
+                
                 <div id='Footer-image'>
-                    <img alt='Logo-footer' src={signup_logo} />
+                    <img alt='Logo-footer' src={login_logo} />
                 </div>
 
                 <div className='texts'>
@@ -64,7 +62,8 @@ const SignUp = () => {
             </footer >
 
         </div>
+
     )
 }
 
-export default SignUp
+export default Login
