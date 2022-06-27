@@ -1,13 +1,12 @@
 import React from 'react'
 import './css/login.css'
 import login_logo from './imgs/disney-logo.png'
-import createUser from '../../Validations/LoginValidations'
 
 const Login = () => {
     return (
         <div id='login'>
 
-            <form onSubmit={createUser} id='login-form'>
+            <form id='login-form'>
 
                 <div id='login-logo'>
                     <img alt='Disney-Logo' src={login_logo} />

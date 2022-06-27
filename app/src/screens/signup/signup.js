@@ -1,13 +1,38 @@
-import React from 'react'
-import './css/signup.css'
-import signup_logo from './imgs/disney-logo.png'
-import createUser from '../../Validations/SignUpValidations'
+import React from 'react';
+import './css/signup.css';
+import signup_logo from './imgs/disney-logo.png';
+import { useState } from 'react';
 
 const SignUp = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const HandleEmailChange = (e) => {
+        setEmail(e.target.value)
+    }
+
+    const HandlePasswordChange = (e) => {
+        setPassword(e.target.value);
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const EmailregEx = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+        const PasswordregEx = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+
+        if (EmailregEx.test(email) && PasswordregEx.test(password)) {
+            console.log("Email and Password is valid");
+        } else {
+            console.log('Password or Email is invalid');
+        }
+
+    }
+
     return (
         <div id='SignUp'>
 
-            <form onSubmit={createUser} id='SignUp-form'>
+            <form onSubmit={handleSubmit} id='SignUp-form'>
 
                 <div id='SignUp-logo'>
                     <img alt='Disney-logo' src={signup_logo} />
@@ -16,9 +41,9 @@ const SignUp = () => {
                 <div id='SignUp-infos'>
                     <h3>Sign Up with your email</h3>
                     <div id='fieldset-SignUp'>
-                        <input id='username' autoComplete='on' type='text' placeholder='Username'></input>
-                        <input id='email' autoComplete='on' type='email' placeholder='Email'></input>
-                        <input className='password' autoComplete='on' type='password' placeholder='Password'></input>
+                        <input id='username' required={true} autoComplete='on' type='text' placeholder='Username'></input>
+                        <input id='email' required={true} value={email} onChange={HandleEmailChange} autoComplete='on' type='email' placeholder='Email'></input>
+                        <input className='password' required={true} value={password} onChange={HandlePasswordChange} autoComplete='on' type='password' placeholder='Password'></input>
                         <button type='submit'>CONTINUE</button>
                     </div>
 

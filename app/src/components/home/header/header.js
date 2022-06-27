@@ -10,10 +10,16 @@ import tv from './imgs/tv.png'
 
 const Header = () => {
 
-    function MenuHamburguer() {
+    const MenuHamburguer = () => {
         const Hamburguer = document.getElementById('navbar')
         Hamburguer.classList.toggle('nav-menu')
     }
+
+    const perfil_list = () => {
+        const element = document.getElementById('perfil_list')
+        element.classList.toggle('perfil_list')
+    }
+
 
     return (
         <div id='navbar'>
@@ -30,13 +36,13 @@ const Header = () => {
 
             <ul className='menu'>
                 <div className='menu-hamburguer'>
-                    <li className='nav-item'><a href='/' className='nav-link'>INICIO</a></li>
-                    <li className='nav-item'><a href='/search' className='nav-link'>PESQUISA</a></li>
-                    <li className='nav-item'><a href='#' className='nav-link'>MINHA LISTA</a></li>
-                    <li className='nav-item'><a href='#' className='nav-link'>ORIGINAIS</a></li>
-                    <li className='nav-item'><a href='#' className='nav-link'>FILMES</a></li>
-                    <li className='nav-item'><a href='#' className='nav-link'>SERIES</a></li>
-                    <li className='nav-item'><a href='#' className='nav-link'>PERFIL</a></li>
+                    <li className='nav-item'><a href='/' className='nav-link'>HOME</a></li>
+                    <li className='nav-item'><a href='/search' className='nav-link'>SEARCH</a></li>
+                    <li className='nav-item'><a href='/wishlist' className='nav-link'>WISHLIST</a></li>
+                    <li className='nav-item'><a href='/originals' className='nav-link'>ORIGINALS</a></li>
+                    <li className='nav-item'><a href='/movies' className='nav-link'>MOVIES</a></li>
+                    <li className='nav-item'><a href='/series' className='nav-link'>SERIES</a></li>
+                    <li className='nav-item'><a href='/perfil' className='nav-link'>PERFIL</a></li>
                 </div>
             </ul>
 
@@ -44,39 +50,46 @@ const Header = () => {
 
                 <div className='item'>
                     <img src={house} />
-                    <span><a href='/'>INICIO</a></span>
+                    <span><a href='/'>HOME</a></span>
                 </div>
 
                 <div className='item'>
                     <img src={lupa} />
-                    <span><a href='/search'>PESQUISA</a></span>
+                    <span><a href='/search'>SEARCH</a></span>
                 </div>
 
                 <div className='item'>
                     <img src={mais} />
-                    <span><a>MINHA LISTA</a></span>
+                    <span><a href='/wishlist'>WISHLIST</a></span>
                 </div>
 
                 <div className='item'>
                     <img src={star} />
-                    <span><a>ORIGINAIS</a></span>
+                    <span><a href='/originals'>ORIGINALS</a></span>
                 </div>
 
                 <div className='item'>
                     <img src={rolo} />
-                    <span><a>FILMES</a></span>
+                    <span><a href='/movies'>MOVIES</a></span>
                 </div>
 
                 <div className='item'>
                     <img src={tv} />
-                    <span><a>SÉRIES</a></span>
+                    <span><a href='/series'>SERIES</a></span>
                 </div>
 
             </div>
 
-            <div id='changeperfil'>
+            <div onClick={perfil_list} id='changeperfil'>
                 <span id='username'>Jhoony</span>
                 <div id='change'></div>
+                <ul id='perfil_list'>
+                    <li><a href='#'>Meu perfil</a></li>
+                    <li><a href='#'>Outro perfil</a></li>
+                    <li><a href='#'>Configurações</a></li>
+                    <li><a href='#'>Ajuda</a></li>
+                    <li><a href='/login'>Sair</a></li>
+                </ul>
             </div>
 
         </div>

@@ -37,12 +37,32 @@
     gap: 20px;
 }
 
+
 @media (max-width: 900px) {
+    #SearchContent{
+        display: flex;
+        flex-wrap: wrap;
+    }
     #Searchbar input[type=submit] {
         display: none;
     }
 
     #Searchbar input[type=text] {
         width: 100%;
+    }
+}
+
+@media (max-width: 675px){
+    #Search-movies{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 400px){
+    #Search-movies{
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

@@ -1,4 +1,4 @@
-#Movies{
+#Movies {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
@@ -7,21 +7,21 @@
 
 }
 
-.movie-card{
-    border: 4px solid gray;
+.movie-card {
+    border: 4px solid darkgray;
     border-radius: 15px;
     margin: 0 auto;
     cursor: pointer;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
-.movie-card:hover{
+.movie-card:hover {
     transition-duration: 0.8s;
     transform: scale(1.1);
 }
 
-.movie-card img{
+.movie-card img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -29,3 +29,40 @@
     background-size: cover;
 }
 
+.play {
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -30%;
+    right: -80%;
+    z-index: 50;
+}
+
+@media (max-width: 1235px){
+    #Movies{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .play{
+        top: -40%;
+        right: -70%;
+    }
+}
+
+@media (max-width: 655px){
+    #Movies{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 488px){
+    #Movies{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
