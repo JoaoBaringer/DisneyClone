@@ -21,7 +21,7 @@ const Search = () => {
             <div id="Search-movies">
                 {newmovies.map((movie, i) => {
                     return (
-                        <div key={movie.i} className='movie-card'>
+                        <div key={movie.i} className='movie-card' style={{height:150}}>
                             <img alt={movie.i} key={movie.i} className={movie.i} src={movie.image} />
                         </div>
                     )

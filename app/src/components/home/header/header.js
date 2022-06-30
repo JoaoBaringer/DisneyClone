@@ -84,11 +84,11 @@ const Header = () => {
                 <span id='username'>Jhoony</span>
                 <div id='change'></div>
                 <ul id='perfil_list'>
-                    <li><a href='#'>Meu perfil</a></li>
-                    <li><a href='#'>Outro perfil</a></li>
-                    <li><a href='#'>Configurações</a></li>
-                    <li><a href='#'>Ajuda</a></li>
-                    <li><a href='/login'>Sair</a></li>
+                    <li><a href='#'>Profile</a></li>
+                    <li><a href='#'>Another profile</a></li>
+                    <li><a href='#'>Settings</a></li>
+                    <li><a href='#'>Help</a></li>
+                    <li><a href='/login'>Exit</a></li>
                 </ul>
             </div>
 

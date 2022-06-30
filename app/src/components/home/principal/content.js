@@ -10,10 +10,9 @@ export default function Content() {
     return (
         <div id='content'>
             <Header />
-            <Carousel/>
-            <Cards/>
-            <Footer/>
-            
+            <Carousel />
+            <Cards />
+            <Footer />
         </div>
     )
 }

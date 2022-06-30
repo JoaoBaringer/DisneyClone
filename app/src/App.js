@@ -1,12 +1,15 @@
 import React from 'react'
 import './app.css'
 import Rotas from './routes';
+import { ProviderList } from './hooks/Provider';
 
 function App() {
   return (
-    <div className='app'>
-      <Rotas/>
-    </div>
+    <ProviderList>
+      <div className='app'>
+        <Rotas />
+      </div>
+    </ProviderList>
   );
 }
 
