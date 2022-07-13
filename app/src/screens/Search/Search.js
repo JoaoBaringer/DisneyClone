@@ -3,11 +3,12 @@ import Header from "../../components/home/header/header";
 import { movies as importmovies } from '../../components/home/Cards/imgs/movies'
 import './css/Searchbar.css'
 import Footer from '../../components/home/Footer/Footer'
+import Watchlater from "../../components/WatchLater/Watchlater";
 
 const Search = () => {
     const [word, setword] = useState('')
 
-    const newmovies = importmovies.filter((movie) => movie['i'].toLowerCase().includes(word.toLowerCase()))
+    const newmovies = importmovies.filter((movie) => movie['i'].toLocaleLowerCase().includes(word.toLowerCase()))
 
     return (
         <div id="SearchContent">
@@ -20,9 +21,11 @@ const Search = () => {
 
             <div id="Search-movies">
                 {newmovies.map((movie, i) => {
+                    let id = movie.image
                     return (
-                        <div key={movie.i} className='movie-card' style={{height:150}}>
-                            <img alt={movie.i} key={movie.i} className={movie.i} src={movie.image} />
+                        <div key={movie.i} className='search-card'>
+                            <img alt={movie.i} id={id} key={movie.i} className={movie.i} src={movie.image} />
+                            <Watchlater id={id}/>
                         </div>
                     )
                 })}

@@ -1,21 +1,22 @@
 import React from 'react';
 import Header from '../../components/home/header/header';
-import './css/movies.css';
+import { movies } from '../../components/home/Cards/imgs/movies';
+import './css/series.css';
 import Footer from '../../components/home/Footer/Footer';
-import { movies } from '../../components/home/Cards/imgs/movies'
 import WatchLater from '../../components/WatchLater/Watchlater';
 
-const MovieScreen = () => {
-    const moviescreen = movies.filter(movie => movie['category'] == 'movie')
+const Series = () => {
+
+    const series = movies.filter(movie => movie['category'] == 'serie')
 
     return (
-        <div id='MovieScreen'>
+        <div id='SeriesContent'>
             <Header />
-            <div id='movies'>
-                {moviescreen.map(movie => {
+            <div id='Series'>
+                {series.map(movie => {
                     const id = movie.image
                     return (
-                        <div key={movie.i} className='screenmovie-card'>
+                        <div key={movie.image} className='serie-card'>
                             <img src={movie.image} />
                             <WatchLater id={id}/>
                         </div>
@@ -27,4 +28,4 @@ const MovieScreen = () => {
     )
 }
 
-export default MovieScreen
+export default Series

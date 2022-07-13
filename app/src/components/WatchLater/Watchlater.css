@@ -1,0 +1,56 @@
+.increment {
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -30%;
+    right: -80%;
+    z-index: 50;
+}
+
+.addedmovie {
+    border-radius: 10px;
+    text-align: center;
+    margin: 15px;
+    right: 0;
+    top:0;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 5000;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    position: fixed;
+    background-image: linear-gradient(to right, rgb(24, 25, 90), rgb(24, 39, 89));
+}
+
+.addedmovie p {
+    width: 100%;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+.progress{
+    height: 12px;
+    background-image: linear-gradient(to right, rgb(24, 25, 126), rgb(60, 65, 124)) ;
+    border-radius: 3px;
+    animation: unprogress-animation 2s;
+}
+
+@keyframes unprogress-animation {
+    0% {width: 0% ;}
+    100% {width: 100%;}
+}
+
+@media (max-width: 850px){
+    .increment{
+        top: -45%;
+        right: -65%;
+    }
+}

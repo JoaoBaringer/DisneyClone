@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 1fr;
     min-height: 100vh;
-    clear: both;
+    overflow: hidden;
 }
 
 #Searchbar {
@@ -14,7 +14,7 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 80px;    
+    margin-top: 80px;
     margin-bottom: 30px;
 }
 
@@ -31,18 +31,40 @@
 
 #Search-movies {
     width: 90%;
-    margin: auto;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
+
 }
 
+.search-card{
+    height: 200px;
+    border: 4px solid darkgray;
+    border-radius: 15px;
+    cursor: pointer;
+}
 
-@media (max-width: 900px) {
-    #SearchContent{
+.search-card:hover{
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+}
+
+.search-card img{
+    width: 100%; height: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    #SearchContent {
         display: flex;
         flex-wrap: wrap;
     }
+
+    .search-card{
+        height: 150px;
+    }
+
     #Searchbar input[type=submit] {
         display: none;
     }
@@ -52,17 +74,17 @@
     }
 }
 
-@media (max-width: 675px){
-    #Search-movies{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
-
-@media (max-width: 400px){
-    #Search-movies{
-        border: 1px solid red;
+@media (max-width: 675px) {
+    #Search-movies {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
+
+@media (max-width: 400px) {
+    #Search-movies {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}   

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 export const ListContext = React.createContext({});
 
 export const ProviderList = ({ children }) => {
 
-    let storage = localStorage;
+        let storage = localStorage;
 
     return (
         <ListContext.Provider value={storage}>

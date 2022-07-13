@@ -15,11 +15,13 @@ export const movies = [
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F739A4A69CD358A020877BBDBF8A6C24B6AFDC9598EE4846C9E00250BC1B8EEE/scale?width=400&aspectRatio=1.78&format=jpeg'
     },
     {
+        originals: 'originals',
         category: 'infant',
         i: 'Carros3',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/ADA7A28E0CEDA14FE9BC81CE152FBBB45E05D9585193DC0F97D6E2D9C8F3726A/scale?width=400&aspectRatio=1.78&format=jpeg'
     },
     {
+        originals: 'originals',
         category: 'infant',
         i: 'Carros2',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/18601BDAF485B9B57B98B10969705D238663954A2AFA180D9B3B8967B7FAF1A0/scale?width=400&aspectRatio=1.78&format=jpeg'
@@ -71,15 +73,18 @@ export const movies = [
     },
     {
         category: 'movie',
+        originals: 'originals',
         i: 'Alladin',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2CB9D3025AB4895A0DB31A3CCA6EA0FB99D4BB27C8110F63043BA8C90ED34306/scale?width=400&aspectRatio=1.78&format=jpeg'
     },
     {
         category: 'infant',
+        originals: 'originals',
         i: 'Frozen II',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/234FDB653ADE833086801BF47C837D477C76923AA9BBA01818CCB52B264B4305/scale?width=400&aspectRatio=1.78&format=jpeg'
     },
     {
+        originals: 'originals',
         category: 'infant',
         i: 'Enrolados',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7F13D8A6C439C62AEDAD4E8A05FF413C5EF58CB0519B42612C65FBA66889AB2F/scale?width=400&aspectRatio=1.78&format=jpeg'
@@ -90,56 +95,67 @@ export const movies = [
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E8311131C13292C80EE929C8F9A50ED135E2E6373B2CD4D6C67DB0E1D9E02043/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal'
     },
     {
+        originals: 'originals',
         category: 'infant',
         i: 'ToyStory',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F468F9EA0CEA90E2A41FC5282BB449DCBA86AFD9B7776470E330EC6CCAC76045/scale?width=400&aspectRatio=1.78&format=jpeg'
     },
     {
+        originals: 'originals',
         category: 'infant',
         i: 'ToyStory2',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/0DF20C092853B803BA2E721ABCCDCE2A96B8BDE758648B776FC6BCEBE9C4E612/scale?width=400&aspectRatio=1.78&format=jpeg'
     },
     {
+        originals: 'originals',
         category: 'infant',
         i: 'O Bom dinossauro',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5664EDE53ECB30F1BC4DFD28BE0300E3B9305AC306D82C9EF47F73B4ECE299C2/scale?width=400&aspectRatio=1.78&format=jpeg'
     },
     {
         category: 'infant',
+        originals: 'originals',
         i: 'Monstros S.A',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2502C89BCFBDF282C24033846B93E9D6A329C3E8A67B207EC56F55FACEB00CC9/scale?width=400&aspectRatio=1.78&format=jpeg'
     },
     {
         category: 'infant',
+        originals: 'originals',
         i: 'Universidade monstros',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CA3B1B04886F31BECB5EE0D919574B468A48F426F73F0DDE9B183EE5E69D9A30/scale?width=400&aspectRatio=1.78&format=jpeg'
     },
     {
         category: 'infant',
+        originals: 'originals',
         i: 'Luca',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1DA7FE1D2596F87F4C9B087EF71339E48134507B6E579A44C0816EFE51FEE93A/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal'
     },
     {
         category: 'infant',
+        originals: 'originals',
         i: 'Vida de inseto',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/AC447E593C3DFDADA5CEDD3A832E70D4A55E99B1683BEB57DA3486E6B62F830A/scale?width=400&aspectRatio=1.78&format=jpeg'
     },
     {
         category: 'infant',
+        originals: 'originals',
         i: 'Procurando Dory',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B45032E4F76CFF616A69BD3256643A5D4A786FF80031698A02EF577302D0CF9A/scale?width=400&aspectRatio=1.78&format=jpeg'
     },
     {
         category: 'infant',
+        originals: 'originals',
         i: 'Ratatouille',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A611BE3A08AAF4A6150AA81D61B3E92DAAD7A235F9FE50FEB4603567EC184FF3/scale?width=400&aspectRatio=1.78&format=jpeg'
     },
     {
         category: 'infant',
+        originals: 'originals',
         i: 'Soul',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/ABE3485D578B6BFC2A0DF37AFF66AF430F1C1CEF14BD8D4AD8E4F08FEAA9D3DA/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal'
     },
     {
+        originals: 'originals',
         category: 'infant',
         i: 'Os incríveis',
         image: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/16588ACD92ACA1D131FA9A8F3501702ADB35733EB9CAFD47FC1EA0BDA7B5814C/scale?width=400&aspectRatio=1.78&format=jpeg'

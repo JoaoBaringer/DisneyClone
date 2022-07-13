@@ -19,13 +19,14 @@ This is a starter project/clone of Disney+ which is still under devopment with y
 
 ## 📌 ROUTES
 
-- localhost:3000/ -> Home
-- localhost:3000/login - Login (Under development)
-- localhost:3000/signup - Register(Under development)
-- localhost:3000/search - Search Screen
-- localhost:3000/wishlist - Wishlist Screen
-- localhost:3000/originals - Originals Screen
-- localhost:3000/movies - Movies Screen
+- / -> Home
+- /login - Login (Under development)
+- /signup - Register(Under development)
+- /search - Search Screen
+- /wishlist - Wishlist Screen
+- /originals - Originals Screen
+- /movies - Movies Screen
+- /series - Series Screen
 
 
 

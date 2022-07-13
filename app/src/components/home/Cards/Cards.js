@@ -1,5 +1,5 @@
 import React from 'react'
-import './css/Cards.css'
+import './css/Cards/Cards.css'
 import { cards } from './imgs/cards'        
 import Movies from './Movies'
 

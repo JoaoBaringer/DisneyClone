@@ -13,9 +13,13 @@
     height: 65px;
 }
 
+a {
+    color: white;
+}
+
 .Logo {
-    height: 85%;
-    width: 5%;
+    height: 70%;
+    width: 4%;
     margin-left: 20px;
     cursor: pointer;
 }
@@ -56,12 +60,7 @@
 }
 
 .item a {
-    color: white;
     text-decoration: none;
-}
-
-.item span {
-    margin-left: 10px;
 }
 
 .item span:hover {
@@ -105,8 +104,8 @@
     background-size: cover;
 }
 
-#perfil_list{
-    display: none ;
+#perfil_list {
+    display: none;
 }
 
 #changeperfil .perfil_list {
@@ -121,12 +120,12 @@
     font-size: 18px;
 }
 
-#changeperfil .perfil_list a{
+#changeperfil .perfil_list a {
     color: white;
     text-decoration: none;
 }
 
-.perfil_list a:hover{
+.perfil_list a:hover {
     border-bottom: 2px solid white;
 }
 

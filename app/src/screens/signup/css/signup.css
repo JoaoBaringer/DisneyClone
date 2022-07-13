@@ -8,7 +8,7 @@
 }
 
 #SignUp-form{
-    margin: auto;
+    margin-left: auto; margin-right: auto; margin-bottom: 110px;
     width: 500px;
     height: 580px;
     display: grid;

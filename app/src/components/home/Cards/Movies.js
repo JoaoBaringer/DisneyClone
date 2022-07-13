@@ -1,31 +1,18 @@
-import React, { useContext } from 'react'
-import './css/Movies.css'
-import './css/Cards.css'
-import { movies } from './imgs/movies'
-import increment from './imgs/increment.png'
-import { ListContext } from '../../../hooks/Provider'
+import React from 'react';
+import { movies } from './imgs/movies';
+import Watchlater from '../../WatchLater/Watchlater';
+import './css/Movies/Movies.css';
 
 const Movies = () => {
-    const storage = useContext(ListContext);
-
-
-    function getmovie(id) {
-        storage.setItem(id, id)
-        console.log(storage)
-    }
-
-
     return (
         <div id='Movies'>
-            {movies.map((movie, i) => {
+            {movies.map((movie, i)=> {
                 let id = movie.image
                 return (
-                    <div key={movie.i} className='movie-card'>
-                        <img alt={movie.i} className={movie.i} id={id} src={movie.image} />
-                        <div onClick={() => getmovie(id)} className='play'>
-                            <img alt='increment' src={increment} />
+                         <div key={movie.i} className='movie-card'>
+                            <img alt={movie.i} className={movie.i} id={id} src={movie.image} />
+                            <Watchlater id={id} />
                         </div>
-                    </div>
                 )
             })}
         </div>
