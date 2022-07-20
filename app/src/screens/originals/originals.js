@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../../components/home/header/header';
-import { movies as originalmovies } from '../../components/home/Cards/imgs/movies';
+import Header from '../../components/header/header';
+import { movies as originalmovies } from '../../components/Cards/imgs/movies';
 import './css/originals.css';
-import Footer from '../../components/home/Footer/Footer';
+import Footer from '../../components/Footer/Footer';
 import WatchLater from '../../components/WatchLater/Watchlater';
 
 const Originals = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './components/home/principal/content';
+import Home from './screens/home/content';
 import NotFoundScreen from './screens/NotFoundScreen/NotFoundScreen';
 import SignUp from './screens/signup/signup';
 import Login from './screens/login/login';

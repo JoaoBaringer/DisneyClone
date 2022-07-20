@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Header from "../../components/home/header/header";
-import { movies as importmovies } from '../../components/home/Cards/imgs/movies'
+import Header from "../../components/header/header";
+import { movies as importmovies } from '../../components/Cards/imgs/movies';
 import './css/Searchbar.css'
-import Footer from '../../components/home/Footer/Footer'
+import Footer from '../../components/Footer/Footer'
 import Watchlater from "../../components/WatchLater/Watchlater";
 
 const Search = () => {

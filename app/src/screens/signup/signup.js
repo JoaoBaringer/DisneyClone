@@ -2,7 +2,7 @@ import React from 'react';
 import './css/signup.css';
 import signup_logo from './imgs/disney-logo.png';
 import { useState } from 'react';
-import Footer from '../../components/home/Footer/Footer';
+import Footer from '../../components/Footer/Footer';
 
 const SignUp = () => {
     const INITIAL_VALUES = {

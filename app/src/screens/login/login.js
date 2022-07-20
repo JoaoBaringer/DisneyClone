@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/login.css';
 import login_logo from './imgs/disney-logo.png';
-import Footer from '../../components/home/Footer/Footer';
+import Footer from '../../components/Footer/Footer';
 const Login = () => {
     return (
         <div id='login'>

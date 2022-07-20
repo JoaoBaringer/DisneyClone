@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import Header from '../../components/home/header/header';
+import Header from '../../components/header/header';
 import './css/wishlist.css'
-import { ListContext } from '../../hooks/WishProvider';
+import { ListContext } from '../../context/WishProvider';
 import decrement from './imgs/decrement.png';
-import Footer from '../../components/home/Footer/Footer'
+import Footer from '../../components/Footer/Footer'
 
 const Wishlist = () => {
 

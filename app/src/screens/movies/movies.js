@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../../components/home/header/header';
+import Header from '../../components/header/header';
 import './css/movies.css';
-import Footer from '../../components/home/Footer/Footer';
-import { movies } from '../../components/home/Cards/imgs/movies'
+import Footer from '../../components/Footer/Footer';
+import { movies } from '../../components/Cards/imgs/movies'
 import WatchLater from '../../components/WatchLater/Watchlater';
 
 const MovieScreen = () => {

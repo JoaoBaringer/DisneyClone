@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import increment from '../home/Cards/imgs/increment.png'
-import { ListContext } from '../../hooks/WishProvider';
+import increment from './imgs/increment.png'
+import { ListContext } from '../../context/WishProvider';
 import './Watchlater.css';
 
 const Watchlater = ({ id }) => {

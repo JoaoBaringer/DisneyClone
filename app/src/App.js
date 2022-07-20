@@ -1,7 +1,7 @@
 import React from 'react'
 import './app.css'
 import Rotas from './routes';
-import { ProviderList } from './hooks/WishProvider';
+import { ProviderList } from './context/WishProvider';
 
 function App() {
   return (

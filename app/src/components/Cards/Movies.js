@@ -1,6 +1,6 @@
 import React from 'react';
 import { movies } from './imgs/movies';
-import Watchlater from '../../WatchLater/Watchlater';
+import Watchlater from '../WatchLater/Watchlater';
 import './css/Movies/Movies.css';
 
 const Movies = () => {
